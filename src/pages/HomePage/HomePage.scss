@@ -1,0 +1,13 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/variables" as *;
+
+.main {
+  width: 100%;
+  background-color: $off-white;
+  min-height: calc(100vh - 8rem);
+  &__wrapper {
+
+  }
+}
+
