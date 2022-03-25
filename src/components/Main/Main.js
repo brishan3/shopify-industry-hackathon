@@ -32,7 +32,9 @@ export default function () {
                   welcomeHeader={"Welcome, Mike"}
                   welcomeMsg={"Looks like you're new here!"}
                   buttonText={"Let's get started"}
-                  onClickHandler={() => {fullpageApi.moveSectionDown()}}
+                  onClickHandler={() => {
+                    fullpageApi.moveSectionDown();
+                  }}
                 />
               </div>
               <div className="section"></div>
@@ -79,6 +81,16 @@ export default function () {
                       description={staticText[3]}
                       image={onboardFour}
                       stepper={stepperFour}
+                    />
+                  </div>
+                  <div className="slide">
+                    <LandingPage
+                      welcomeHeader={"Thanks for touring!"}
+                      welcomeMsg={"Let's start creating"}
+                      buttonText={"Start creating"}
+                      onClickHandler={() => {
+                        fullpageApi.moveTo(2);
+                      }}
                     />
                   </div>
                 </div>
