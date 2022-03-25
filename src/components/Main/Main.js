@@ -19,7 +19,7 @@ const staticText = [
   "We're excited to welcome you to an exclusive international digital community and marketplace",
 ];
 
-export default function () {
+function Main() {
   return (
     <div className="App">
       <ReactFullpage
@@ -35,7 +35,7 @@ export default function () {
                   welcomeMsg={"Looks like you're new here!"}
                   buttonText={"Let's get started"}
                   onClickHandler={() => {
-                    fullpageApi.moveSectionDown();
+                    fullpageApi.silentMoveTo(2);
                     fullpageApi.setAllowScrolling(false);
                   }}
                 />
@@ -98,7 +98,7 @@ export default function () {
                     <Onboard
                       text={"Future Forward"}
                       description={staticText[3]}
-                      handler = {() => fullpageApi.moveSectionDown()}
+                      handler = {() => fullpageApi.silentMoveTo(5)}
                       image={onboardFour}
                       stepper={stepperFour}
                     />
@@ -112,7 +112,7 @@ export default function () {
                     welcomeMsg={"Let's start creating"}
                     buttonText={"Start creating"}
                     onClickHandler={() => {
-                      fullpageApi.moveTo(2);
+                      fullpageApi.silentMoveTo(2);
                     }}
                   />
                 </div>
@@ -123,3 +123,5 @@ export default function () {
     </div>
   );
 }
+
+export default Main;
