@@ -28,10 +28,16 @@ function App() {
                 />
               </div>
               <div className="section">
-                < PreviewPage />
+                < PreviewPage
+                  description={"Welcome! This would be a description of what your NFT has to offer. Users can like, comment and share at will."}
+                  gifNum={"1"}
+                />
               </div>
               <div className="section">
-                // Shopify Preview Page 2
+              < PreviewPage
+                  description={"We have a limitless scroll to help keep our community engaged. Add some relevant hashtags below. Let's get trendy!"}
+                  gifNum={"2"}
+                />
               </div>
               <div className="section">
                 <div className="slide">
