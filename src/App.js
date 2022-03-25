@@ -15,12 +15,12 @@ function App() {
         /* Options here */
         scrollingSpeed={600}
         controlArrows = {true}
-        sectionsColor = {["#95bf47","#ff9d72", "#018765", "#f6c058"]}
+        sectionsColor = {["white","#ff9d72", "#018765", "#f6c058"]}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
               <div className="section">
-                < LandingPage />
+                < LandingPage onClickHandler={() => {fullpageApi.moveSectionDown()}} />
               </div>
               <div className="section">
                 < PreviewPage />
