@@ -27,6 +27,10 @@ ul {
 
 .page-wrapper {
   width: 100%;
-  margin: 0 auto;
-  max-width: $page-limit;
+  height: 100%;
+  padding: 1.25rem;
+}
+
+.fp-controlArrow {
+  display: none;
 }
