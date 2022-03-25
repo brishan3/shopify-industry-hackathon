@@ -1,8 +1,10 @@
 import './App.scss'
 import ReactFullpage from '@fullpage/react-fullpage'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import PageHeader from './components/PageHeader/PageHeader'
-import HomePage from './pages/HomePage/HomePage'
+// import { BrowserRouter, Switch, Route } from 'react-router-dom'
+// import PageHeader from './components/PageHeader/PageHeader'
+import LandingPage from './pages/LandingPage/LandingPage'
+import PreviewPage from './pages/PreviewPage/PreviewPage'
+import OnboardingPage from './pages/OnboardingPage/OnboardingPage'
 
 function App() {
   return (
@@ -13,24 +15,22 @@ function App() {
         /* Options here */
         scrollingSpeed={600}
         controlArrows = {true}
-        sectionsColor = {["red","orange", "purple", "green"]}
+        sectionsColor = {["#95bf47","#ff9d72", "#018765", "#f6c058"]}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
               <div className="section">
-                <div className="page-wrapper"> // For each components - Outer parent
-                  // Landing Component
-                </div>
+                < LandingPage />
               </div>
               <div className="section">
-                // Shopify Preview Page
+                < PreviewPage />
               </div>
               <div className="section">
                 // Shopify Preview Page 2
               </div>
               <div className="section">
                 <div className="slide">
-                  // Onboarding Page 1
+                  < OnboardingPage />
                 </div>
                 <div className="slide">
                   // Onboarding Page 2
