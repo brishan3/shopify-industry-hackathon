@@ -4,6 +4,22 @@
 
 
 .preview__wrapper {
+  background: linear-gradient(0deg, rgba(0,61,44,1) 0%, rgba(7,17,12,1) 35%, rgba(0,0,0,1) 100%);
 
 }
 
+.gif-eth {
+  background: url('../../assets/images/gif-eth.gif');
+}
+
+.gif-1 {
+  background: url('../../assets/images/gif-1.gif') no-repeat, linear-gradient(0deg, rgba(0,61,44,1) 0%, rgba(7,17,12,1) 35%, rgba(0,0,0,1) 100%);
+  object-fit: contain;
+  object-position: center;
+}
+
+.gif-2 {
+  background: url('../../assets/images/gif-2.gif');
+  object-fit: contain;
+  object-position: center;
+}
