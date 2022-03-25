@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/style": "^0.8.0",
+    "@emotion/styled": "^11.8.1",
     "@fullpage/react-fullpage": "^0.1.22",
+    "@mui/material": "^5.5.2",
     "@shopify/polaris": "^9.2.3",
     "@shopify/polaris-icons": "^4.18.2",
     "@testing-library/jest-dom": "^5.16.2",

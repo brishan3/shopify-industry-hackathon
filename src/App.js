@@ -1,66 +1,33 @@
-import './App.scss'
-import ReactFullpage from '@fullpage/react-fullpage'
+import "./App.scss";
+import ReactFullpage from "@fullpage/react-fullpage";
 // import { BrowserRouter, Switch, Route } from 'react-router-dom'
 // import PageHeader from './components/PageHeader/PageHeader'
-import LandingPage from './pages/LandingPage/LandingPage'
-import PreviewPage from './pages/PreviewPage/PreviewPage'
-import OnboardingPage from './pages/OnboardingPage/OnboardingPage'
+import LandingPage from "./pages/LandingPage/LandingPage";
+import PreviewPage from "./pages/PreviewPage/PreviewPage";
+import OnboardingPage from "./pages/OnboardingPage/OnboardingPage";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import PageHeader from "./components/PageHeader/PageHeader";
+import Onboard from "./components/Onboard/Onboard";
+import onboardOne from "./assets/images/onboardOne.svg";
+import onboardTwo from "./assets/images/onboardTwo.svg";
+import onboardThree from "./assets/images/onboardThree.svg";
+import onboardFour from "./assets/images/onboardFour.svg";
+import stepperOne from "./assets/images/stepperOne.svg";
+import stepperTwo from "./assets/images/stepperTwo.svg";
+import stepperThree from "./assets/images/stepperThree.svg";
+import stepperFour from "./assets/images/stepperFour.svg";
+import Main from "./components/Main/Main";
 
 function App() {
   return (
     <div className="App">
-      <ReactFullpage
-        /* Fullpage Options */
-        licenseKey={'YOUR_KEY_HERE'}
-        /* Options here */
-        scrollingSpeed={600}
-        controlArrows = {true}
-        sectionsColor = {["white","#ff9d72", "#018765", "#f6c058"]}
-        render={({ state, fullpageApi }) => {
-          return (
-            <ReactFullpage.Wrapper>
-              <div className="section">
-                < LandingPage
-                  welcomeHeader={"Welcome, Mike"}
-                  welcomeMsg={"Looks like you're new here!"}
-                  buttonText={"Let's get started"}
-                  onClickHandler={() => {fullpageApi.moveSectionDown()}}
-                />
-              </div>
-              <div className="section">
-                < PreviewPage />
-              </div>
-              <div className="section">
-                // Shopify Preview Page 2
-              </div>
-              <div className="section">
-                <div className="slide">
-                  < OnboardingPage />
-                </div>
-                <div className="slide">
-                  // Onboarding Page 2
-                </div>
-                <div className="slide">
-                  // Onboarding Page 3
-                </div>
-                <div className="slide">
-                  // Onboarding Page 4
-                </div>
-              </div>
-              <div className="section">
-                < LandingPage
-                    welcomeHeader={"Thanks for touring!"}
-                    welcomeMsg={"Let's start creating"}
-                    buttonText={"Start creating"}
-                    onClickHandler={() => {fullpageApi.moveTo(2)}}
-                  />
-              </div>
-            </ReactFullpage.Wrapper>
-          )
-        }}
-      />
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" component={Main} />
+        </Switch>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
