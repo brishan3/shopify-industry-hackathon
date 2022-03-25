@@ -10,15 +10,15 @@ import {
 import sungWang from '../../assets/images/sung-wang-g4DgCF90EM4-unsplash-scaled.jpg'
 
 
-function LandingPage({onClickHandler}) {
+function LandingPage({welcomeHeader, welcomeMsg, buttonText, onClickHandler}) {
   return (
     <section className='landing'>
       {/* <h1>Landing Page</h1> */}
       <div className="landing__wrapper-top page-wrapper">
         <header className='landing-header'>
-          <h1 className='landing-header__welcome-text'>Welcome to Shopify, Mike</h1>
+          <h1 className='landing-header__welcome-text'>{welcomeHeader}</h1>
           <div className='landing-header__block'>
-            <h2 className='landing-header__sub-text'>Let's get started</h2>
+            <h2 className='landing-header__sub-text'>{welcomeMsg}</h2>
           </div>
         </header>
         <main className='landing__main'>
@@ -31,7 +31,7 @@ function LandingPage({onClickHandler}) {
               <p className='product-card__description-subtext'>We'd love to see what you have to contribute to our community.</p>
             </div>
             <button className='product-card__button' onClick={() => {onClickHandler()}}>
-              Let's get started
+              {buttonText}
             </button>
             <a className='product-card__learn-more' href="">Learn more about adding NFT's</a>
           </div>

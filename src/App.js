@@ -20,7 +20,12 @@ function App() {
           return (
             <ReactFullpage.Wrapper>
               <div className="section">
-                < LandingPage onClickHandler={() => {fullpageApi.moveSectionDown()}} />
+                < LandingPage
+                  welcomeHeader={"Welcome, Mike"}
+                  welcomeMsg={"Looks like you're new here!"}
+                  buttonText={"Let's get started"}
+                  onClickHandler={() => {fullpageApi.moveSectionDown()}}
+                />
               </div>
               <div className="section">
                 < PreviewPage />
@@ -41,6 +46,14 @@ function App() {
                 <div className="slide">
                   // Onboarding Page 4
                 </div>
+              </div>
+              <div className="section">
+                < LandingPage
+                    welcomeHeader={"Thanks for touring!"}
+                    welcomeMsg={"Let's start creating"}
+                    buttonText={"Start creating"}
+                    onClickHandler={() => {fullpageApi.moveTo(2)}}
+                  />
               </div>
             </ReactFullpage.Wrapper>
           )
