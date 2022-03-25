@@ -1,15 +1,16 @@
 import "./Main.scss";
 import ReactFullpage from "@fullpage/react-fullpage";
 import LandingPage from "../../pages/LandingPage/LandingPage";
-import Onboard from "../Onboard/Onboard";
-import onboardOne from "../../assets/images/onboardOne.svg";
-import onboardTwo from "../../assets/images/onboardTwo.svg";
+import Onboard from '../../pages/Onboard/Onboard';
+import PreviewPage from "../../pages/PreviewPage/PreviewPage";
 import onboardThree from "../../assets/images/onboardThree.svg";
 import onboardFour from "../../assets/images/onboardFour.svg";
 import stepperOne from "../../assets/images/stepperOne.svg";
 import stepperTwo from "../../assets/images/stepperTwo.svg";
 import stepperThree from "../../assets/images/stepperThree.svg";
 import stepperFour from "../../assets/images/stepperFour.svg";
+import onBoardOne from "../../assets/images/onBoardOne.png";
+import onBoardTwo from "../../assets/images/onBoardTwo.png";
 
 const staticText = [
   "With Shopify, we've made buying and selling NFT's sleek and simple. You'll be able to accept a variety of payment methods in a secure wallet.",
@@ -25,6 +26,7 @@ export default function () {
         scrollingSpeed={600}
         controlArrows={true}
         render={({ fullpageApi }) => {
+          
           return (
             <ReactFullpage.Wrapper>
               <div className="section">
@@ -34,11 +36,28 @@ export default function () {
                   buttonText={"Let's get started"}
                   onClickHandler={() => {
                     fullpageApi.moveSectionDown();
+                    fullpageApi.setAllowScrolling(false);
                   }}
                 />
               </div>
-              <div className="section"></div>
-              <div className="section">// Shopify Preview Page 2</div>
+              <div className="section">
+                < PreviewPage
+                    description={"Welcome! This would be a description of what your NFT has to offer. Users can like, comment and share at will."}
+                    gifNum={"1"}
+                    onClickHandler={() => {
+                      fullpageApi.moveSectionDown()
+                    }}
+                  />  
+              </div>
+              <div className="section">
+                < PreviewPage
+                    description={"We have a limitless scroll to help keep our community engaged. Add some relevant hashtags below. Let's get trendy!"}
+                    gifNum={"2"}
+                    onClickHandler={() => {
+                      fullpageApi.moveSectionDown()
+                    }}
+                  />
+              </div>
 
               <div className="section">
                 <div className="slide">
@@ -47,7 +66,7 @@ export default function () {
                       text={"Forge Your Own Brand"}
                       description={staticText[0]}
                       handler={() => fullpageApi.moveSlideRight()}
-                      image={onboardOne}
+                      image={onBoardOne}
                       stepper={stepperOne}
                     />
                   </div>
@@ -58,7 +77,7 @@ export default function () {
                       text={"Forge Your Own Brand"}
                       description={staticText[1]}
                       handler={() => fullpageApi.moveSlideRight()}
-                      image={onboardTwo}
+                      image={onBoardTwo}
                       stepper={stepperTwo}
                     />
                   </div>
@@ -79,22 +98,24 @@ export default function () {
                     <Onboard
                       text={"Future Forward"}
                       description={staticText[3]}
+                      handler = {() => fullpageApi.moveSectionDown()}
                       image={onboardFour}
                       stepper={stepperFour}
                     />
                   </div>
-                  <div className="slide">
-                    <LandingPage
-                      welcomeHeader={"Thanks for touring!"}
-                      welcomeMsg={"Let's start creating"}
-                      buttonText={"Start creating"}
-                      onClickHandler={() => {
-                        fullpageApi.moveTo(2);
-                      }}
-                    />
-                  </div>
                 </div>
+
               </div>
+                <div className="section">
+                  <LandingPage
+                    welcomeHeader={"Thanks for touring!"}
+                    welcomeMsg={"Let's start creating"}
+                    buttonText={"Start creating"}
+                    onClickHandler={() => {
+                      fullpageApi.moveTo(2);
+                    }}
+                  />
+                </div>
             </ReactFullpage.Wrapper>
           );
         }}

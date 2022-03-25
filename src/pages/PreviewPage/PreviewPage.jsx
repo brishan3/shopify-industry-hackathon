@@ -8,7 +8,7 @@ import shareIcon from '../../assets/icons/ShareMinor.svg';
 import plusIcon from '../../assets/icons/CirclePlusMajor.svg';
 import chevronUp from '../../assets/icons/ChevronUpMinor.svg';
 
-function PreviewPage({description, gifNum}) {
+function PreviewPage({description, gifNum, onClickHandler}) {
   return (
     <div className={`preview__wrapper page-wrapper gif-${gifNum}`}>
       <header className='preview-header'>
@@ -68,7 +68,7 @@ function PreviewPage({description, gifNum}) {
             #NFTgang #Shopify
           </p>
         </div>
-        <div className='preview-bottom__swipe'>
+        <div className='preview-bottom__swipe' onClick={onClickHandler}>
             <img className='preview-main__social-icon' src={chevronUp}/>
             <p className='preview-bottom__swipe-text'>Swipe</p>
         </div>
