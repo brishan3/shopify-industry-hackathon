@@ -19,7 +19,6 @@ function LandingPage({onClickHandler}) {
           <h1 className='landing-header__welcome-text'>Welcome to Shopify, Mike</h1>
           <div className='landing-header__block'>
             <h2 className='landing-header__sub-text'>Let's get started</h2>
-            <Icon source={HorizontalDotsMinor} color="base"/>
           </div>
         </header>
         <main className='landing__main'>
