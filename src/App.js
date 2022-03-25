@@ -1,10 +1,7 @@
-import './App.scss'
-import ReactFullpage from '@fullpage/react-fullpage'
-// import { BrowserRouter, Switch, Route } from 'react-router-dom'
-// import PageHeader from './components/PageHeader/PageHeader'
-import LandingPage from './pages/LandingPage/LandingPage'
-import PreviewPage from './pages/PreviewPage/PreviewPage'
-import OnboardingPage from './pages/OnboardingPage/OnboardingPage'
+import "./App.scss";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Main from "./components/Main/Main";
 
 function App() {
   return (
@@ -66,7 +63,9 @@ function App() {
         }}
       />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
+
