@@ -2,6 +2,8 @@ import "./App.scss";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Main from "./components/Main/Main";
+import ReactFullpage from '@fullpage/react-fullpage'
+import PreviewPage from './pages/PreviewPage/PreviewPage'
 
 function App() {
   return (
@@ -31,14 +33,14 @@ function App() {
                 />
               </div>
               <div className="section">
-              < PreviewPage
-                  description={"We have a limitless scroll to help keep our community engaged. Add some relevant hashtags below. Let's get trendy!"}
-                  gifNum={"2"}
-                />
+                < PreviewPage
+                    description={"We have a limitless scroll to help keep our community engaged. Add some relevant hashtags below. Let's get trendy!"}
+                    gifNum={"2"}
+                  />
               </div>
               <div className="section">
                 <div className="slide">
-                  < OnboardingPage />
+                  {/* < OnboardingPage /> */}
                 </div>
                 <div className="slide">
                   // Onboarding Page 2

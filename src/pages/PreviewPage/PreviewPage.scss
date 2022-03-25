@@ -72,6 +72,10 @@
       width: 25px;
       height: 25px;
       margin-bottom: 0.5rem;
+      transistion: 0.4s;
+      &:hover {
+        transform: scale(1.05);
+      }
       &--plus {
         margin-bottom: none;
         
