@@ -29,8 +29,6 @@ Client:
 [react-fullpage](https://www.npmjs.com/package/@fullpage/react-fullpage),
 
 
-Client side: 
-
 ## Usage
 To run this project locally, follow these steps:
 
