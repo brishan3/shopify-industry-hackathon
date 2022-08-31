@@ -1,6 +1,6 @@
 # Prima Polaris - Industry Project Hackathon - Shopify x Brainstation
 
-Prima Polaris was a collaborative hackathon project designed to showcase a shopify experience that invites digital artist to sell their NFT's via Shopify's global platform. Our team consisted of two UX/UI Design students, one Data Science student, one Digital Marketing student and two Web Development students. Prima Polaris was conceptualized, designed and realized in less than 24 hrs using Figma (Mock-ups | UI/UX), HTML, Sass and react-fullpage, to create an interactive experience in time for demonstation in front of Shopify panelists.
+Prima Polaris was a collaborative hackathon project designed to showcase a shopify experience that invites digital artists to sell their NFT's via Shopify's global platform. Our team consisted of two UX/UI Design students, one Data Science student, one Digital Marketing student and two Web Development students. Prima Polaris was conceptualized, designed and realized in less than 24 hrs using Figma (Mock-ups | UI/UX), HTML, Sass and react-fullpage, to create an interactive experience in time for demonstation in front of Shopify panelists.
 
 
 ## Team
