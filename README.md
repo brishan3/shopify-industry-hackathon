@@ -15,7 +15,7 @@ This project was built with the collaboration of : <br>
 
 ## Screenshots
 
-Coming Soon...
+<img src="https://i.ibb.co/D43dgRh/primapolaris-Snip.jpg" width=50% height=50%><img src="https://i.ibb.co/rMcYrGs/primapolaris-Snip2.jpg" width=50% height=50%><img src="https://i.ibb.co/DbKm2Sv/primapolaris-Snip3.jpg" width=50% height=50%><img src="https://i.ibb.co/V3Q9C74/primapolaris-Snip4.jpg" width=50% height=50%>
 
 
 ## Tools
