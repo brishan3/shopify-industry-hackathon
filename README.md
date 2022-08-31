@@ -32,13 +32,13 @@ Client:
 ## Usage
 To run this project locally, follow these steps:
 
-Clone the server repository
+Clone the client repository
 ##### `$ git clone https://github.com/brishan3/shopify-industry-hackathon.git`
 
-Install server dependencies
+Install client dependencies
 ##### `$ npm install`
 
-Start the server
+Start the client
 ##### `$ npm run dev`
 
 
